@@ -19,7 +19,7 @@
 ![Multilingual-Preference-Optimization](https://img.shields.io/badge/Task-Multilingual--Preference--Optimization-red) <a href='https://arxiv.org/pdf/2410.08964'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> 
 </div>
 
-## Overview
+## 🔖 Overview
 This work explores a novel perspective: *leveraging the preference knowledge embedded within existing English-aligned models to facilitate multilingual preference alignment.*
 Prior work has demonstrated that the implicit reward model, derived from the logits of a well-aligned English DPO model and its reference model, effectively captures preferences over English instructions.  
 Building on this, we apply this implicit reward model to the multilingual setting, using it to label preference relations in cross-lingual instruction-response pairs. This ensures that multilingual responses are evaluated based on their alignment with English instructions.
@@ -42,7 +42,7 @@ Our approach involves three key steps:
 - [06/03/2025]🔥We release the [code](https://github.com/ZNLP/Implicit-Cross-Lingual-Rewarding) for Implicit Cross-Lingual Rewarding!
 - [05/03/2025]🔥Implicit Cross-Lingual Rewarding is coming! We release the [paper](https://arxiv.org/pdf/2405.15232)!
 
-## 👀 Contents
+## 📃 Contents
 
 - [Setup](#Setup)
 - [Preparation](#Preparation)
@@ -83,7 +83,7 @@ bash scripts/run_pipeline.sh
 
 Our training is mostly performed on [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) code base. Please refer to that repo for more details.
 
-## 📈 Inference
+##  📌 Inference
 
 ```bash
 bash scripts/batch_inference_for_xalpacaeval.sh
@@ -112,7 +112,7 @@ We provide some results in this section. More detailed results can be found in o
 </details>
 </div>
 
-### More Analysis
+### 📊 More Analysis
 + Different Implicit Rewards
 <div align=center>
 <img width="80%" src="assets/different_reward_models.png"/>
@@ -131,7 +131,7 @@ We provide some results in this section. More detailed results can be found in o
 </details>
 </div>
 
-## Citation
+## 🔗 Citation
 
 If you find this repo useful for your research, please consider citing the paper
 
@@ -139,7 +139,7 @@ If you find this repo useful for your research, please consider citing the paper
 TBD
 ```
 
-## Acknowledgement
+## 🌈 Acknowledgement
 
 We would like to thank the following repos for their great work:
 
@@ -150,6 +150,6 @@ We would like to thank the following repos for their great work:
 + [LLaMA](https://github.com/facebookresearch/llama) for making Llama series models available
 
 
-## License
+## 🔎 License
 
 This project is released under the [Apache 2.0 license](https://github.com/RainBowLuoCS/DEEM/blob/main/LICENSE). Parts of this project contain code and models from other sources, which are subject to their respective licenses.
