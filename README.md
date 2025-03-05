@@ -146,8 +146,8 @@ We would like to thank the following repos for their great work:
 + [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) for providing the preference optimization framework
 + [Vllm](https://github.com/vllm-project/vllm) for the efficient inference engine with high throughput
 + [transformers](https://github.com/huggingface/transformers) for providing the model-base and fune-tuning framework
-+ [SimPO](https://github.com/princeton-nlp/SimPO) for providing [Llama-3-Base-8B-SFT-DPO](https://huggingface.co/princeton-nlp/Llama-3-Base-8B-SFT-DPO) and [Llama-3-Base-8B-SFT](https://huggingface.co/princeton-nlp/Llama-3-Base-8B-SFT)
-+ [LLaMA](https://github.com/facebookresearch/llama) for providing Llama series models
++ [SimPO](https://github.com/princeton-nlp/SimPO) for providing [Llama-3-Base-8B-SFT-DPO](https://huggingface.co/princeton-nlp/Llama-3-Base-8B-SFT-DPO) and [Llama-3-Base-8B-SFT](https://huggingface.co/princeton-nlp/Llama-3-Base-8B-SFT) as base model in our work
++ [LLaMA](https://github.com/facebookresearch/llama) for making Llama series models available
 
 
 ## License
