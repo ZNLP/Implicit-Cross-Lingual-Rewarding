@@ -76,7 +76,7 @@ pip install -r requirements.txt
 
 
 ```bash
-bash ./scripts/run_pipeline.sh
+bash scripts/run_pipeline.sh
 ```
 
 ## 📈 Train
