@@ -34,7 +34,7 @@ Our goal with this approach is to contribute a new perspective to the multilingu
 - [Setup](#Setup)
 - [Preparation](#Preparation)
 - [Train](#Train)
-- [Evaluation](#Evaluation)
+- [Inference](#Inference)
 - [Experiments](#Experiments)
 - [Citation](#citation)
 
@@ -70,7 +70,7 @@ bash ./scripts/run_pipeline.sh
 
 Our training is mostly performed on [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) code base. Please refer to that repo for more details.
 
-## 📈 Inference_on_X-AlpacaEval
+## 📈 Inference
 
 ```bash
 bash scripts/batch_inference_for_xalpacaeval.sh
