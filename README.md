@@ -142,7 +142,14 @@ TBD
 ## Acknowledgement
 
 We would like to thank the following repos for their great work:
-- This work utilizes the great work from [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [Vllm](https://github.com/vllm-project/vllm), [transformers](https://github.com/huggingface/transformers), [LLaMA](https://github.com/facebookresearch/llama), [SimPO](https://github.com/princeton-nlp/SimPO)
+
++ [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) for providing the preference optimization framework
++ [Vllm](https://github.com/vllm-project/vllm) for the efficient inference engine with high throughput
++ [transformers](https://github.com/huggingface/transformers) for providing the model-base and fune-tuning framework
++ [SimPO](https://github.com/princeton-nlp/SimPO) for providing [Llama-3-Base-8B-SFT-DPO](https://huggingface.co/princeton-nlp/Llama-3-Base-8B-SFT-DPO) and [Llama-3-Base-8B-SFT](https://huggingface.co/princeton-nlp/Llama-3-Base-8B-SFT)
++ [LLaMA](https://github.com/facebookresearch/llama) for providing Llama series models
+
+
 ## License
 
 This project is released under the [Apache 2.0 license](https://github.com/RainBowLuoCS/DEEM/blob/main/LICENSE). Parts of this project contain code and models from other sources, which are subject to their respective licenses.
