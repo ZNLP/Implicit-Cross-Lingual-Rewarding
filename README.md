@@ -20,9 +20,22 @@
 </div>
 
 ## Overview
-We introduce **Language Imbalance Driven Rewarding**, a novel approach that leverages the inherent capability imbalance across different languages in large language models (LLMs) as a reward signal for iterative self-improvement. By applying iterative DPO training, our approach _not only enhances the performance of non-dominant languages but also improves outcomes in dominant languages._ 
+This work explores a novel perspective: *leveraging the preference knowledge embedded within existing English-aligned models to facilitate multilingual preference alignment.*
+Prior work has demonstrated that the implicit reward model, derived from the logits of a well-aligned English DPO model and its reference model, effectively captures preferences over English instructions.  
+Building on this, we apply this implicit reward model to the multilingual setting, using it to label preference relations in cross-lingual instruction-response pairs. This ensures that multilingual responses are evaluated based on their alignment with English instructions.
+We term *Implicit Cross-Lingual Rewarding*, which preserves reward signal fidelity by directly evaluating multilingual responses under English instructions, avoiding translation-induced distortions.
 
-Our goal with this approach is to contribute a new perspective to the multilingual LLM community by challenging the assumption that language imbalance is solely a challenge to be mitigated. We hope this approach will inspire further exploration into _multilingual self-improvement_ in LLMs, broadening the horizon for more balanced and capable language models.
+<p align="center">
+    <img src="assets/outline.png" width="100%" height="100%">
+</p>
+
+Our approach involves three key steps:
+
++ Multilingual response generation: Starting from any multilingual model that is DPO-tuned on English preference data from an initial reference model. Responses are sampled by the model from multilingual prompts. 
+
++ Implicit cross-lingual rewarding: Constructing cross-lingual instruction-response pairs by pairing English instructions with sampled multilingual responses. The implicit reward model then assigns preference scores to these responses, capturing the model's learned preference knowledge.
+
++ Preference Transfer Training: Our approach adopts iterative DPO similar to previous works, incorporating a negative log-likelihood (NLL) loss term to train on the multilingual preference data, thereby transferring preferences across languages.
 
 ## 🔥 Update
 
