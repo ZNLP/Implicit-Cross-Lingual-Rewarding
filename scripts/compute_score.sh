@@ -18,6 +18,12 @@
 #   - ref_model_dir: "/public/zhangjiajun/PretrainModels/princeton-nlp/Llama-3-Base-8B-SFT"
 # ==============================================
 
+# Set the working directory for the project
+export code_dir=/public/zhangjiajun/wyang/workspace/release/code/Implicit-Cross-Lingual-Rewarding
+# Specify the Python environment
+export python_env=/public/zhangjiajun/anaconda3/envs/qwq/bin/python
+
+
 # Set CUDA device (default: GPU 0)
 export CUDA_VISIBLE_DEVICES=${1:-"0"}
 

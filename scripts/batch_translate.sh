@@ -4,8 +4,11 @@
 export TOKENIZERS_PARALLELISM=false
 export CUDA_VISIBLE_DEVICES="${1:-0}"
 
-code_dir=/public/zhangjiajun/wyang/workspace/dual_dpo/dual_dpo_v10
-python_env=/public/zhangjiajun/anaconda3/envs/qwq/bin/python
+
+# Set the working directory for the project
+export code_dir=/public/zhangjiajun/wyang/workspace/release/code/Implicit-Cross-Lingual-Rewarding
+# Specify the Python environment
+export python_env=/public/zhangjiajun/anaconda3/envs/qwq/bin/python
 
 
 src=${2:-"en"}

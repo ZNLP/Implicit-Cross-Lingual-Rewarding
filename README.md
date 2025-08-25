@@ -16,7 +16,7 @@
 <sup>3</sup> Wuhan AI Research
 <sup>4</sup> Shanghai Artificial Intelligence Laboratory, Shanghai, China<br>
     
-![Multilingual-Preference-Optimization](https://img.shields.io/badge/Task-Multilingual--Preference--Optimization-red) <a href='https://arxiv.org/pdf/2410.08964'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> 
+![Multilingual-Preference-Optimization](https://img.shields.io/badge/Task-Multilingual--Preference--Optimization-red) <a href='https://arxiv.org/abs/2503.04647'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> 
 </div>
 
 ## 🔖 Overview
@@ -38,18 +38,34 @@ Our approach involves three key steps:
 + Preference Transfer Training: Our approach adopts iterative DPO similar to previous works, incorporating a negative log-likelihood (NLL) loss term to train on the multilingual preference data, thereby transferring preferences across languages.
 
 ## 🔥 Update
-
+- [25/08/2025] We have released all checkpoints used in our work  on [🤗HuggingFace](https://huggingface.co/collections/James-WYang/implicit-cross-lingual-reward-68abd2f34ea0b45b56283b3c). Apologies for the delay!
+- [23/04/2025]🍉Implicit Cross-lingual Rewarding has been accepted by ACL 2025!
 - [06/03/2025]🔥We release the [code](https://github.com/ZNLP/Implicit-Cross-Lingual-Rewarding) for Implicit Cross-Lingual Rewarding!
-- [05/03/2025]🔥Implicit Cross-Lingual Rewarding is coming! We release the [paper](https://arxiv.org/pdf/2405.15232)!
+- [05/03/2025]🔥Implicit Cross-Lingual Rewarding is coming! We release the [paper](https://arxiv.org/abs/2503.04647)!
 
 ## 📃 Contents
-
+- [Models](#Models)
 - [Setup](#Setup)
 - [Preparation](#Preparation)
 - [Train](#Train)
 - [Inference](#Inference)
 - [Experiments](#Experiments)
 - [Citation](#citation)
+
+## 🔓 Models
+| Model Name                                                                                 | 🤗HuggingFace   |
+|--------------------------------------------------------------------------------------------|--------|
+| ICR_M0_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr                                                  | https://huggingface.co/James-WYang/ICR_M0_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr    |
+| ICR_M1_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr                                                 | https://huggingface.co/James-WYang/ICR_M1_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr    |
+| ICR_M0_Llama-3-Base-8B-SFT-KTO_en_es_ru_de_fr                                                  | https://huggingface.co/James-WYang/ICR_M0_Llama-3-Base-8B-SFT-KTO_en_es_ru_de_fr    |
+| ICR_M1_Llama-3-Base-8B-SFT-KTO_en_es_ru_de_fr                                                  | https://huggingface.co/James-WYang/ICR_M1_Llama-3-Base-8B-SFT-KTO_en_es_ru_de_fr    |
+| ICR_M0_Llama-3-Base-8B-SFT-DPO_en_bn_sw_th                                                  | https://huggingface.co/James-WYang/ICR_M0_Llama-3-Base-8B-SFT-DPO_en_bn_sw_th    |
+| ICR_M1_Llama-3-Base-8B-SFT-DPO_en_bn_sw_th                                                  | https://huggingface.co/James-WYang/ICR_M1_Llama-3-Base-8B-SFT-DPO_en_bn_sw_th    |
+| ICR_ANALYSIS_M0_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr_each_language_1000_samples                                                 | https://huggingface.co/James-WYang/ICR_ANALYSIS_M0_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr_each_language_1000_samples    |
+| ICR_ANALYSIS_M0_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr_each_language_5000_samples                                                  | https://huggingface.co/James-WYang/ICR_ANALYSIS_M0_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr_each_language_5000_samples    |
+| ICR_ANALYSIS_M0_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr_wo_length_control                                                  | https://huggingface.co/James-WYang/ICR_ANALYSIS_M0_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr_wo_length_control    |
+| ICR_ANALYSIS_M1_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr_with_t-1_reference_model                                                  | https://huggingface.co/James-WYang/ICR_ANALYSIS_M1_Llama-3-Base-8B-SFT-DPO_en_es_ru_de_fr_with_t-1_reference_model    |
+
 
 
 ## 📷 Setup
@@ -135,8 +151,23 @@ We provide some results in this section. More detailed results can be found in o
 
 If you find this repo useful for your research, please consider citing the paper
 
+Implicit Cross-lingual Rewarding:
 ```
-TBD
+@article{yang2025implicit,
+  title={Implicit Cross-Lingual Rewarding for Efficient Multilingual Preference Alignment},
+  author={Yang, Wen and Wu, Junhong and Wang, Chen and Zong, Chengqing and Zhang, Jiajun},
+  journal={arXiv preprint arXiv:2503.04647},
+  year={2025}
+}
+```
+Language Imbalance Driven Rewarding:
+```
+@article{yang2024language,
+  title={Language Imbalance Driven Rewarding for Multilingual Self-improving},
+  author={Yang, Wen and Wu, Junhong and Wang, Chen and Zong, Chengqing and Zhang, Jiajun},
+  journal={arXiv preprint arXiv:2410.08964},
+  year={2024}
+}
 ```
 
 ## 🌈 Acknowledgement

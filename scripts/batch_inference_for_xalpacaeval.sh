@@ -15,6 +15,11 @@
 #   - checkpoint_dir: "/public/zhangjiajun/PretrainModels/princeton-nlp/Llama-3-Base-8B-SFT-DPO"
 # ==============================================
 
+# Set the working directory for the project
+export code_dir=/public/zhangjiajun/wyang/workspace/release/code/Implicit-Cross-Lingual-Rewarding
+# Specify the Python environment
+export python_env=/public/zhangjiajun/anaconda3/envs/qwq/bin/python
+
 # Disable parallel tokenization to avoid issues
 export TOKENIZERS_PARALLELISM=false
 
